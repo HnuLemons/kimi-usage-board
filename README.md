@@ -48,16 +48,6 @@ lsof -ti :8080 | xargs kill         # 彻底停止服务
 - 防爆破：同一 IP 连续输错 5 次锁定 60 秒；
 - 密码与 API Key 一样只存在于服务端，前端不存储。
 
-## API
-
-| 端点 | 方法 | 说明 |
-|:---|:---|:---|
-| `/` | GET | 看板页面 |
-| `/api/login` | POST | 提交密码 `{ "password": "..." }`，成功设置 Cookie |
-| `/api/logout` | POST | 清除 Cookie |
-| `/api/usage` | GET | 读取缓存（过期才回源），需登录 |
-| `/api/refresh` | POST | 强制回源刷新（全局限频 15s），需登录 |
-
 ## 配置（.env）
 
 ```bash
