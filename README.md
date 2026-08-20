@@ -2,8 +2,6 @@
 
 一个多人共享的 **Kimi Coding Plan 额度看板**网站：同时监控两个 API Key 的每周用量与 5 小时限额，每 120 秒自动刷新，支持手动刷新。
 
-设计参考自 [kimi-code-usage](../kimi-code-usage)，上游数据解析逻辑移植自其 `providers/kimi.py`。
-
 ## 快速开始
 
 ```bash
